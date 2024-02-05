@@ -1,0 +1,16 @@
+import logging
+import os
+
+from devbooster.common import get_env_as_bool
+
+DEVBOOSTER_LOGGING_FOLDER = "runtime/logs"
+DEVBOOSTER_LOGGING_LEVEL = os.environ.get("DEVBOOSTER_LOGGING_LEVEL", 0)
+DEVBOOSTER_LOGGING_CONFIG_FILE = os.environ.get("DEVBOOSTER_LOGGING_CONFIG_FILE")
+DEVBOOSTER_LOGGING_LOGGER_CLASS = logging.Logger
+DEVBOOSTER_LOGGING_TIMER_LEVEL = os.environ.get("DEVBOOSTER_LOGGING_TIMER_LEVEL")
+DEVBOOSTER_LOGGING_BASE_FORMAT = '%(asctime)s - %(levelname)8s - %(threadName)s - %(name)s - %(message)s'
+DEVBOOSTER_LOGGING_JSONED_DEFAULT = get_env_as_bool("DEVBOOSTER_LOGGING_JSONED_DEFAULT", False)
+DEVBOOSTER_LOGGING_EXCLUDE_PROCESSES = os.environ.get("DEVBOOSTER_LOGGING_EXCLUDE_PROCESSES", default="").split(",")
+DEVBOOSTER_LOGGING_TICKER_ON = get_env_as_bool("DEVBOOSTER_LOGGING_TICKER_ON", default="False")
+DEVBOOSTER_LOGGING_TICKER_SECS_INTERVAL = float(os.environ.get("DEVBOOSTER_LOGGING_TICKER_SECS_INTERVAL", default="0.1"))
+DEVBOOSTER_LOGGING_CONTEXT_VARS = filter(lambda x: x != "", os.environ.get("DEVBOOSTER_LOGGING_CONTEXT_VARS", default="").split(","))
