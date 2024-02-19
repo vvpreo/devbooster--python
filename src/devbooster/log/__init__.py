@@ -75,7 +75,7 @@ def setup():
     DO NOT FORGET THAT YOU MUST SETUP LOGGING MODULE FIRST IN EACH PYTHON PROCESS YOU RUN
     :return:
     """
-
+    print()
     from devbooster.log.root_logger_filter import DevboosterRootLoggerFilter
     root_logger = DevboosterRootLoggerFilter
 

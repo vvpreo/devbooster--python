@@ -5,7 +5,7 @@ import traceback
 from types import TracebackType
 from typing import Union, Tuple, Type, Optional, Dict
 
-from devbooster.common import MetaSingleton
+from devbooster.common.MetaSingleton import MetaSingleton
 
 _SysExcInfoType = Union[Tuple[Type[BaseException], BaseException, Optional[TracebackType]], Tuple[None, None, None]]
 _ExcInfoType = Union[None, bool, _SysExcInfoType, BaseException]

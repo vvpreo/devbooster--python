@@ -66,3 +66,7 @@ def get_project_root(marker: str = "src", current_dir: str = None) -> str:
     new_current_dir = delim.join(splitted[:-1])
 
     return get_project_root(marker, current_dir=new_current_dir)
+
+def get_env_as_bool(var_name, default):
+    """Возвращает булево значение переменной окружения. True: 'true', '1', 't', 'y', 'yes'"""
+    return os.getenv(var_name, str(default)).lower() in ('true', '1', 't', 'y', 'yes')
