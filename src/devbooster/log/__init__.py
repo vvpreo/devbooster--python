@@ -101,4 +101,4 @@ def setup():
     root_logger().setup()
 
     logger = logging.getLogger("lg")
-    logger.info("Realtalk Logger setup DONE")
+    logger.info("Devbooster Logger setup DONE")
