@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "python-devbooster"
+name = "devbooster"
 version = "0.1.0"
 description = ""
 authors = ["vvpreo <vvpreo@gmail.com>"]
