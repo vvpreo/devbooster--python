@@ -1,13 +1,12 @@
 [tool.poetry]
 name = "devbooster"
 version = "0.1.0"
-description = ""
+description = "Python devbooster package"
 authors = ["vvpreo <vvpreo@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
-pydantic = "^1.10.2"
 pyyaml = "^6.0.1"
 psutil = "^5.9.8"
 
