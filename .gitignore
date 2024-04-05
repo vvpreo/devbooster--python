@@ -2,5 +2,7 @@ venv
 .idea
 node_modules
 runtime/*
+src/runtime
+tst/runtime
 .pytest_cache
 tst/runtime
